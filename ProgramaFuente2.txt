@@ -1,0 +1,23 @@
+package programafuente2;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class ProgramaFuente2 {
+           
+       public static void main(String[] args)throws IOException {
+        
+        BufferedReader h = new BufferedReader (new InputStreamReader(System.in));
+        System.out.println("Por favor ingrese el año en que nacio");
+        int nacimiento=Integer.parseInt(h.readLine());
+        System.out.println("Por favor ingrese el año actual");
+        int actual=Integer.parseInt(h.readLine());
+        
+        int primaveras=actual-nacimiento;
+        
+        System.out.println("Sus primaveras son: " +primaveras+ "primaveras");   
+        
+    }
+    
+}
