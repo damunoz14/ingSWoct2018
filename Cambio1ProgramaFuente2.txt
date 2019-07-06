@@ -1,0 +1,24 @@
+package calculoedad;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class CalculoEdad {
+    
+
+    public static void main(String[] args)throws IOException {
+        
+        BufferedReader h = new BufferedReader (new InputStreamReader(System.in));
+        System.out.println("Escribe tu año de nacimiento");
+        int nacimiento=Integer.parseInt(h.readLine());
+        System.out.println("Mira el calendario y escribe el año actual");
+        int actual=Integer.parseInt(h.readLine());
+        
+        int primaveras=actual-nacimiento;
+        
+        System.out.println("¿Cuantas primaveras tienes?: "+primaveras+"primaveras tienes");   
+        
+    }
+    
+}
