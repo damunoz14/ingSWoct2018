@@ -1,0 +1,24 @@
+package calculoedad;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class CalculoEdad {
+    
+
+    public static void main(String[] args)throws IOException {
+        
+        BufferedReader h = new BufferedReader (new InputStreamReader(System.in));
+        System.out.println("¿Cual es su anio de nacimiento?");
+        int nac=Integer.parseInt(h.readLine());
+        System.out.println("¿Cual es el anio actual?");
+        int act=Integer.parseInt(h.readLine());
+        
+        int edad=act-nac;
+        
+        System.out.println("Su cantidad de anios son: "+edad+"años");   
+        
+    }
+    
+}
